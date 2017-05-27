@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TableAmort">
+        <item>Pagos</item>
+        <item>Cuota</item>
+        <item>Interés</item>
+        <item>Amortización</item>
+        <item>Saldo</item>
+    </string-array>
+
+</resources>
