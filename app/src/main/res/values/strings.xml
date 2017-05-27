@@ -4,6 +4,18 @@
     <string name="Tasa">Tasa de interés</string>
     <string name="Tiempo">Plazo del préstamo</string>
     <string name="Calculo">Calcular</string>
+    <string name="Meses"> MESES </string>
+    <string name="Cuota"> CUOTA </string>
+    <string name="Intereses"> INTERESES </string>
+    <string name="Amortizacion"> AMORTIZACIÓN </string>
+    <string name="Saldo"> SALDO </string>
+    <string name="Setcero"> 0.00 </string>
+    <string name="Moneysignal"> $ </string>
+    <string name="Porcentsignal"> % </string>
+    <string name="MESES"> Meses </string>
+
+
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

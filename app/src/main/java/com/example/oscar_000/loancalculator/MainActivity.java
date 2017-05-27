@@ -1,23 +1,16 @@
 package com.example.oscar_000.loancalculator;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
-import android.net.Uri;
-import android.support.v4.app.FragmentActivity;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TabHost;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
@@ -114,14 +107,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
             case R.id.spinner2:
-                if(parent.getItemAtPosition(position).toString()=="Anual"){
+                if(parent.getItemAtPosition(position).toString().equals("Anual")){
                     a=1;
                 }else a=0;
                 break;
             case R.id.spinner3:
-                if(parent.getItemAtPosition(position).toString()=="Meses"){
+                if(parent.getItemAtPosition(position).toString().equals("Meses")){
                     b=1;
-                }else if(parent.getItemAtPosition(position).toString()=="Años"){
+                }else if(parent.getItemAtPosition(position).toString().equals("Años")){
                     b=2;
                 }else b=3;
             }
