@@ -59,13 +59,18 @@ public class Generalresults extends AppCompatActivity {
             String total1=String.valueOf(total);
             String intertotales1=String.valueOf(intertotales);
             String pagototales1 =String.valueOf(pagototales);
-
-            montotexto.setText("$"+monto);
-            tasatexto.setText(tasa+"%");
-            plazotexto.setText(plazo+" Meses");
-            pagostexto.setText("$"+total1);
-            pagototal.setText("$"+pagototales1);
-            intertotal.setText("$"+intertotales1);
+            tasa="%"+tasa;
+            monto="$"+monto;
+            total1="$"+total1;
+            pagototales1="$"+pagototales1;
+            intertotales1="$"+intertotales1;
+            plazo=plazo+" Meses";
+            montotexto.setText(monto);
+            tasatexto.setText(tasa);
+            plazotexto.setText(plazo);
+            pagostexto.setText(total1);
+            pagototal.setText(pagototales1);
+            intertotal.setText(intertotales1);
 
             TableLayout tabla = (TableLayout)findViewById(R.id.MyTable);
             TextView textmes = new TextView(this);
@@ -77,29 +82,28 @@ public class Generalresults extends AppCompatActivity {
             TableRow tR2 = new TableRow(this);
             tR2.setPadding(5,5,5,5);
 
-            textmes.setText(" MES ");
+            textmes.setText(R.string.Meses);
             textmes.setGravity(Gravity.CENTER);
             textmes.setBackgroundColor(Color.GRAY);
 
-            textcuota.setText(" CUOTA ");
+            textcuota.setText(R.string.Cuota);
             textcuota.setGravity(Gravity.CENTER);
             textcuota.setBackgroundColor(Color.GRAY);
 
 
-            textintereses.setText(" INTERESES ");
+            textintereses.setText(R.string.Intereses);
             textintereses.setGravity(Gravity.CENTER);
             textintereses.setBackgroundColor(Color.GRAY);
 
 
-            textamortizacion.setText(" AMORTIZACIÓN ");
+            textamortizacion.setText(R.string.Amortizacion);
             textamortizacion.setGravity(Gravity.CENTER);
             textamortizacion.setBackgroundColor(Color.GRAY);
 
 
-            textsaldo.setText(" SALDO ");
+            textsaldo.setText(R.string.Saldo);
             textsaldo.setGravity(Gravity.CENTER);
             textsaldo.setBackgroundColor(Color.GRAY);
-
 
             tR2.addView(textmes);
             tR2.addView(textcuota);
@@ -152,7 +156,7 @@ public class Generalresults extends AppCompatActivity {
                  saldotable.setGravity(Gravity.CENTER);
 
                 if(b==(plazo1-1)){
-                    saldotable.setText("0.00");
+                    saldotable.setText(R.string.Setcero);
                 }
 
                 tR1.addView(mestable);
